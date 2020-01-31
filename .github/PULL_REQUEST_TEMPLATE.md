@@ -2,7 +2,7 @@
 
 Décrire vos changements apportés ainsi que le problème en question qui a été résolu.
 
-**Cocher les mentions inutiles**
+**Cocher les mentions utiles**
 
 - [ ] Correction d'un bug
 - [ ] Nouvelle fonctionnalité
