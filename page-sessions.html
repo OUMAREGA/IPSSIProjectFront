@@ -1,0 +1,118 @@
+<html !Doctype>
+    <head>
+        <title>Sessions</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="page-sessions.html">IPSSI</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarColor01">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="page-sessions.html" id="Sessions">Sessions <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="page-intervenants.html" id="Intervenants">Intervenants</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="page-profil.html" id="Profil">Profil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="connexion.html">Déconnexion</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="module">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">rechercher</button>
+              </form>
+            </div>
+          </nav>
+
+        <div class="container mt-3">
+            <span>Tada !</span>
+            <h1>Sessions disponibles</h1>
+	    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nom</th>
+      <th scope="col">Début</th>
+      <th scope="col">Fin</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">EISI 21.1 CS</th>
+      <td>2020</td>
+      <td>2022</td>
+      <td><a href="" class="btn btn-info">Modifier</a>&nbsp;<a href="" class="btn btn-danger">Supprimer</a></td>
+    </tr>
+   <tr>
+      <th scope="row">EISI 21.1 CS</th>
+      <td>2020</td>
+      <td>2022</td>
+      <td><a href="" class="btn btn-info">Modifier</a>&nbsp;<a href="" class="btn btn-danger">Supprimer</a></td>
+    </tr>
+    <tr>
+      <th scope="row">EISI 21.1 CS</th>
+      <td>2020</td>
+      <td>2022</td>
+      <td><a href="" class="btn btn-info">Modifier</a>&nbsp;<a href="" class="btn btn-danger">Supprimer</a></td>
+    </tr>
+  </tbody>
+</table>
+           
+	      <div>
+		<br>
+		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Nouvelle session</button>
+	      </div>
+        </div>
+
+ <!-- Modal -->
+ <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Nouvelle Session</h4>
+        </div>
+        <div class="modal-body">
+            <form>
+                 <div class="form-group">
+                    <label for="nomSession">Nom Session</label>
+                    <input type="text" class="form-control" id="nomSession" placeholder="Exemple EISI">
+                </div>
+                <div class="form-group">
+                    <label for="promoSession">Promo Session</label>
+                    <input type="text" class="form-control" id="promoSession" placeholder="Exemple AW">
+                </div>
+                <div class="form-group">
+			<label for="date-start">Date de début:</label>
+			<input type="date" id="start" name="date-start" value="2018-07-22">
+		</div>
+		<div class="form-group">
+                        <label for="date-end">Date de fin:</label>
+                        <input type="date" id="start" name="date-end" value="2018-07-22">
+                </div>
+                <button type="submit" class="btn btn-primary">Enregistrer</button>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>	
+    </body>
+
+</html>

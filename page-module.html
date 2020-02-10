@@ -1,0 +1,111 @@
+<html !Doctype>
+    <head>
+        <title>Noter le module</title>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="page-sessions.html">IPSSI</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarColor01">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="page-sessions.html" id="Sessions">Sessions <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="page-profil.html" id="Profil">Profil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="connexion.html">Déconnexion</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+        <div class="container mt-3">
+            <div class="container mt-3">
+                <h3>Programmes et Cours dispensés</h3>
+                <div style="margin-top: 3rem;" >
+                    <!-- boucle for to get data one by one-->
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Date</th>
+                          <th>Module</th>
+                          <th>Note</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>  
+                          <td>2020-02-16</td>
+                          <td id="module" >NodeJS</td>
+                          <td>
+                            <button id="note" onclick="getModuleRated()" type="button" data-toggle="modal" data-target="#myModal" class="btn btn-success">Noter</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2020-01-20</td>
+                          <td>Git</td>
+                          <td><button id="note" onclick="getModuleRated()" type="button" data-toggle="modal" data-target="#myModal" class="btn btn-success">Noter</button></td>
+                        </tr>
+                        <tr>
+                          <td>2020-01-24</td>
+                          <td>SI</td>
+                          <td><button id="note" onclick="getModuleRated()" type="button" data-toggle="modal" data-target="#myModal" class="btn btn-success">Noter</button></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <!-- Modal -->
+ <div class="modal fade" id="myModal" role="dialog" style="float: right;">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Noter le module {{module}} pour l'interveant {{interveant}}</h4>
+        </div>
+        <div class="modal-body">
+          <div>
+              <p>Votre note devra tenir compte des critéres suivants:</p>
+              <ul>
+                  <li><span class="badge badge-info">Qualité du contenu</span></li>
+                  <li><span class="badge badge-info">Pédagogie de l'intervenant</span></li>
+                  <li><span class="badge badge-info">Compréhension du cours</span></li>
+              </ul>
+          </div>
+          
+          <form class="form-inline">
+              <label class="my-1 mr-2" for="inlineFormCustom">Module</label>
+              <input type="text" class="custom-select my-1 mr-sm-1" id="inlineFormCustom" placeholder="Note/20" >
+               
+            </form>
+            <div class="form-group w-50">
+              <label for="exampleFormControlTextarea1">Pourquoi cette note ?</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="button" class="btn btn-success">Noter</button>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+    
+        </div>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+       <script src="noteModule.js" ></script> 
+    </body>
+
+</html>
