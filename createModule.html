@@ -1,0 +1,63 @@
+<html !Doctype>
+    <head>
+        <title>Créer un module</title>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="page-sessions.html">IPSSI</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarColor01">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="page-sessions.html" id="Sessions">Sessions <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="page-profil.html" id="Profil">Profil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="connexion.html">Déconnexion</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+        <div class="container mt-3">
+            <span><h2>Si t'es fiér(e) d'être un admin, tape dans tes mains !</h2></span>
+            <div class="container mt-3">
+                <form >
+                    <fieldset>
+                    <legend>Bienvenu(e) sur la page de création d'un module</legend>
+                    <div class="form-group">
+                        <label for="name">Nom module</label>
+                        <input type="text" class="form-control" id="name" placeholder="Votre module">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleSelect2">Selectionner un intervenant (modifiable)</label>
+                        <select class="form-control" id="selectTeacher">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                  
+                    <button type="submit" class="btn btn-primary">Enregistrer</button>
+                    <button type="submit" class="btn btn-primary">Annuler</button>
+
+                    
+                    </fieldset>
+                </form >
+            </div>
+    
+        </div>
+    </body>
+
+</html>
